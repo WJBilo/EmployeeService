@@ -12,7 +12,7 @@ namespace EmployeeService.Controllers
         public class EleverController : ApiController
     {
         private object entities;
-        // heg
+        // NewBranch
         // Følgende Get udskriver en liste med alle Eleverne 
         public IEnumerable<ElevTable> Get()
         {
