@@ -12,15 +12,13 @@
             $('#btn').click(function () {
                 $.ajax({
                     type: 'GET',
-                    url: "api/employees/",
+                    url: "api/Elever/",
                     dataType: 'json',
                     success: function (data) {
                         ulEmployees.empty();
                         $.each(data, function (index, val) {
                             var fullName = val.fornavn + ' ' + val.efternavn;
                             var status; 
-                            
-                            console.log(val.tilstede); 
                             
                             if (val.tilstede == true) {
                                 status = ' tilstede';
